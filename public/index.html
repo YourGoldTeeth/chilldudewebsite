@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James West - Chill Dude</title>
+    <style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: green;
+    color: gold;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: gold;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: purple; /* Change header text color to purple */
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 200%; /* Adjust carousel width */
+    margin: 20px auto; /* Center the carousel */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%; /* 100% * number of images */
+    animation: rotateImages 20s infinite linear;
+}
+
+.carousel-inner img {
+    width: 15%; /* Each image takes up full width of the carousel */
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes rotateImages {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* About Section Styles */
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: gold;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the World of James West</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Skateboarding</a>
+        <a href="#">Hangouts</a>
+        <a href="#">Faith</a>
+    </nav>
+    <div class="carousel-inner">
+        <div class="carousel img">
+            <img src="skateboarder1.jpg" alt="Skateboarder 1">
+            <img src="skateboarder2.jpeg" alt="Skateboarder 2">
+            <img src="skateboarder3.jpg" alt="Skateboarder 3">
+        </div>    
+    </div>
+    <section>
+        <h2>About Me</h2>
+        <p>I'm James West, a chill dude who loves to skateboard, hang with the homies, and praise God!</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 James West. All rights reserved.</p>
+    </footer>
+</body>
+</html>
